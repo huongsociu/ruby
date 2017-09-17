@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dyrhdznhj
+  api_key: '576258795483161'
+  api_secret: WVL8AhLzUlSfMBPKiBAPeKUPw8c
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dyrhdznhj
+  api_key: '576258795483161'
+  api_secret: WVL8AhLzUlSfMBPKiBAPeKUPw8c
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dyrhdznhj
+  api_key: '576258795483161'
+  api_secret: WVL8AhLzUlSfMBPKiBAPeKUPw8c
+  enhance_image_tag: true
+  static_image_support: false

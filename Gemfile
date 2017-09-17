@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+gem 'devise'
+gem 'gravtastic'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -16,6 +18,8 @@ group :production do
   gem 'pg'
 end
 gem 'carrierwave'
+gem "cloudinary"
+gem 'mini_magick'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
