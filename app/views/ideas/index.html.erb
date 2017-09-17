@@ -7,8 +7,13 @@
   <div class="row">
     <% group.compact.each do |idea| %>
       <div class="col-md-4">
-       
-<%= image_tag(idea.picture_url(:small_thumb)) if idea.picture.present? %>
+        <%= link_to idea do %>
+          <% if idea.picture.present? %>
+          <%= image_tag(idea.picture_url(:small_thumb)) %>
+          <% else %>
+           <%= image_tag "https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAg0AAAAJGQ0M2IzNTRhLWYzYjYtNDgzOS05MTRkLTA3ODIxMmJhZmIwYw.jpg", width: 200, height: 200 %>
+          <% end %>
+        <% end %>
         <h4><%= link_to idea.name, idea %></h4>
         <%= idea.description %>
       </div>

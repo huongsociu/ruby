@@ -5,10 +5,10 @@ include Cloudinary::CarrierWave
   # include CarrierWave::RMagick
    # include CarrierWave::MiniMagick
    version :thumb do
-  process :resize_to_fill => [50, 50]
+  process :resize_to_fill => [500, 500]
 end
 version :small_thumb, from_version: :thumb do
-  process resize_to_fill: [20, 20]
+  process resize_to_fill: [200, 200]
 end
 
   # Choose what kind of storage to use for this uploader:
